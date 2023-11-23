@@ -1,0 +1,591 @@
+.App{
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar{
+  padding-top: 20px;
+  display: flex;
+  margin-left: 20px;
+  justify-content: space-between;
+
+}
+
+.Navbar img{
+  width: 200px;
+  height: 80px;
+}
+
+.dropbtn {
+  background-color: #59769c;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  
+  border: none;
+  border-radius: 8px;
+}
+
+.dropli {
+  background-color:  white;
+  color: black;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+
+}
+.dropli:hover{
+  text-decoration: underline;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 30px;
+  
+}
+.third {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 25px;
+  
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+ 
+}
+
+.Navbar select{
+  display:  none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.Navbar ul li{
+  display: inline-block;
+}
+
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  background-color: #E0ECF8;
+  justify-content: space-between;
+  height: 50px;
+  padding-left: 70px;
+}
+/* .contact h3{
+  
+} */
+.leftcontact{
+  margin-right: 100px;
+  margin-top: 20px;
+  
+  
+}
+.leftcontact a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+ 
+}
+ .Body{
+  display: flex;
+  background-color: #d1e1f7;
+  justify-content: space-between;
+  height: auto;
+ }
+
+ .left {
+margin-left: 60px;
+  margin-top: 120px;
+  float: left;
+ }
+ .left button{
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+ }
+
+ .left button h5{
+ font-size: 15px;
+  margin: 0;
+ }
+ .left h4{
+  color: rgb(83, 81, 81);
+}
+.left h2{
+  color: rgb(61, 60, 60);
+  font-family: sans-serif;
+  font-size: 40px;
+}
+.left h2 span{
+  color: #6185fb;
+}
+ .left input{
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  height: 40px;
+ 
+  background-color: rgb(235, 230, 230);
+  text-align: center;
+ }
+ .right{
+/* padding-left: 140PX; */
+float: right;
+ }
+.right img{
+  /* width: 60%; */
+  /* text-align: right; */
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  /* position: absolute; */
+  display: flex;
+  gap: 150px;
+ margin-top: 0;
+  background-color: #282c34;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+#footlst li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 8px;
+}
+
+footer p {
+  padding-top: 20px;
+  text-align: center;
+  color: #ffff;
+  margin-top: 3px;
+  margin-left: 150px;
+}
+
+.matCard{
+  display: flex;
+  /* height: 500px; */
+  /* margin: 0px 100px 0px 100px; */
+}
+
+.card{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  justify-content: space-around;
+}
+
+.hamburger{
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+    
+  }
+  to {
+    transform: rotate(360deg);
+   
+  }
+
+
+
+}
+@media only screen and(max-width:1024px) {
+  .contact{
+    width: 100%;
+  }
+}
+
+@media (max-width: 1130px) {
+  .dropli {
+    padding: 0px;
+  }
+  .Navbar img{
+    width: 150px;
+    height: 76px;
+  }
+  .dropbtn{
+    font-size: 15px;
+  }
+  .Navbar{
+    margin-left: 0px;
+  }
+  .dropdown{
+    margin-left: 10px;
+  }
+  .lists ul{
+    padding-left: 20px;
+  }
+  .third{
+    margin-right: 10px;
+  }
+  
+}
+
+@media (max-width: 870px) {
+  .contact{
+    padding-left: 30px;
+    
+  }
+  .leftcontact{
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  footer p{
+    margin-left: 100px;
+  }
+
+ 
+}
+
+@media (max-width: 1143px) {
+  footer p{
+    margin-left: 50px;
+  }
+  footer{
+    gap: 20px;
+  }
+  .left {
+    padding-left: 20px;
+    padding-top: 50px;
+    margin:15px;
+    float: left;
+   }
+  .right{
+    width: 50%;
+    
+  }
+   .right img{
+    margin-top: 80px;
+   height: fit-content;
+    width: 100%;
+
+   }
+}
+
+
+@media (max-width: 800px) {
+  .Navbar{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 30px;
+  }
+  .Navbar img{
+    width: 150px;
+    height: 60px;
+    padding-left: 25px;
+  }
+  /* .Navbar{
+    justify-content: center;
+    align-items: center;
+  } */
+  .dropdown{
+    margin-top: 5px;
+  }
+  .dropbtn{
+    font-size: 10px;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    padding: 0;
+    
+  }
+  .dropli{
+    font-size: 15px;
+  }
+
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  /* height: 100px; */
+  text-align: center;
+  }
+  /* .contact h3{
+    display: none;
+    
+  } */
+  .leftcontact{
+    margin: 0;
+  }
+  .contact h3 {
+    font-size: 15px;
+    margin: 0;
+  }
+  .leftcontact a{
+    /* margin: 0; */
+    font-size: 12px;
+  }
+/* .left{
+  margin-left: 150px;
+} */
+  
+}
+
+
+@media (max-width: 968px) {
+  footer p{
+    margin-left: 20px;
+  }
+  footer{
+    gap: 10px;
+  }
+  #footlst ul{
+    padding-left: 20px;
+  }
+ 
+}
+
+@media (max-width: 850px) {
+  .footer{
+    flex-direction: column;
+  }
+  .footer{
+    height: 200px;
+  }
+  .footer p{
+    margin-bottom: 0px;
+  }
+  /* .Navbar{
+    display: none;
+  } */
+  .Navbar img{
+    width: 150px;
+    height: 60px;
+    padding-left: 25px;
+  }
+  .Body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .lists{
+    display: none;
+   
+  }
+  .dropdown, .third{
+    display: none;
+  }
+  /* .Navbar select{
+    display: inline-block;
+    height: 40px;
+   margin-right: 30px;
+    border-radius: 4px;
+    background-color: gray;
+    text-align: center;
+  } */
+
+ 
+  .left{
+    order: 2;
+    /* margin-left: 165px; */
+    justify-content: center;
+    align-items: center;
+    }
+  .left input{
+    width: auto;
+    margin-left: 70px;
+    }
+   .left h4,button{
+    margin-left: auto;
+   }
+  
+  .right img{
+    align-items: center;
+    justify-content: center;
+  }
+  .right{
+    order: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .card{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .left{
+    margin-left: 0;
+  } */
+}
+
+/* @media (max-width: 450px){
+.left{
+  margin-left: -29px;
+}
+} */
+
+/* @media (max-width: 700px){
+  .left{
+    margin-left: 70px;
+  }
+} */
+
+
+/* Hamburger */
+.active{
+  background-color: black;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  
+  /* position: sticky; */
+  top: 0;
+}
+
+nav .title {
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+.open{
+ padding-left: 0;
+}
+nav ul {
+  display: flex;
+  
+}
+
+nav ul li {
+ list-style: none; 
+color: black;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+  /* margin: 0 0.5rem; */
+  border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+  color: black;
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: black;
+  border-radius: 0.2rem;
+}
+
+
+@media (max-width: 850px) {
+  nav .menu {
+      display: flex;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+  }
+
+  nav ul.open {
+      display: flex;
+  }
+
+  nav ul li {
+      width: 100%;
+      text-align: center;
+  }
+
+  nav ul li a {
+      margin: 0.2rem 0.5rem;
+  }
+}
